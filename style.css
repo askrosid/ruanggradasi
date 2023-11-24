@@ -1,0 +1,387 @@
+/*
+Theme Name: Ruang Gradasi
+Theme URI: https://ruanggradasi.com/
+Author: Ahmad Rosid
+Author URI: https://ruanggradasi.com/
+Description: WordPress Theme for Ruang Gradasi
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: rgs
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and up to you.
+*/
+/*-------------------------------------------------------------------------------
+  1.WordPress WYSIWYG styles
+-------------------------------------------------------------------------------*/
+.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.aligncenter, div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+#df_291{
+  background-color: transparent !important;
+}
+
+#df_291 .df-ui-btn.df-ui-next.ti-angle-right, #df_291 .df-ui-btn.df-ui-prev.ti-angle-left{
+  color: #ec8618;
+  opacity: 1;
+}
+
+@media only screen and (max-width:480px){
+ .single .alignright,.single .alignleft{
+ float:none;
+ }
+}
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px;
+}
+/* Global Content */
+.content p:not(:last-child){
+   margin-bottom: 15px;
+}
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6{
+   font-weight: 500;
+   margin-bottom:5px;
+}
+.content strong{
+   font-weight: 500;
+}
+.content ul{
+   list-style-type: disc;
+   list-style-position: inside;
+   padding-left: 10px;
+   margin-bottom: 15px;
+}
+.content ol{
+   list-style-type: decimal;
+   list-style-position: inside;
+   padding-left: 10px;
+   margin-bottom: 15px;
+}
+/* Latest Articles Slider */
+.latest-articles-slider .slick-prev:before, .latest-articles-slider .slick-next:before{
+  font-size:28px;
+}
+.latest-articles-slider .slick-prev{
+  left:18px;
+  z-index:11;
+}
+@media(max-width:767px){
+  .latest-articles-slider .slick-prev{
+    left:10px;
+  }
+}
+.latest-articles-slider .slick-next{
+  right:40px;
+  z-index:11;
+}
+@media(max-width:767px){
+  .latest-articles-slider .slick-next{
+    right:17px;
+  }
+}
+
+/* Header Menu */
+.header-menu ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-menu ul li {
+  position: relative;
+  padding: 15px 0;
+}
+
+.header-menu ul li + li {
+  margin-left: 30px;
+}
+
+.header-menu ul li a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #262626;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.header-menu ul li a.active {
+  color: #FDC815;
+}
+
+.header-menu ul li ul {
+  display: block;
+}
+
+.header-menu ul li ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.header-menu ul li ul li:not(:last-child){
+  margin-bottom:15px;
+}
+
+.header-menu ul li:hover a:hover, .header-menu ul li.current_page_item a {
+  color: #FDC815;
+}
+.header-menu ul.sub-menu li a {
+  color: #262626;
+}
+.header-menu ul.sub-menu li.current-menu-item a {
+  color: #FDC815;
+}
+
+.header-menu ul li:hover > .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+}
+
+.header-menu ul.nav-menu .menu-item-has-children > a:after {
+  content: "\f140";
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font: normal 24px/1 'dashicons';
+  padding-left: 2px;
+  padding-top: 0;
+  vertical-align: top;
+}
+
+.header-menu .sub-menu {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 290px;
+  background-color: #fff;
+  -webkit-box-shadow: 2px 2px 20px rgba(52, 58, 64, 0.1);
+          box-shadow: 2px 2px 20px rgba(52, 58, 64, 0.1);
+  border-top: 2px solid #007965;
+  padding: 15px 20px;
+  z-index: 11;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.header-menu .sub-menu li a {
+  font-size: 16px;
+}
+
+.header-menu .sub-menu li .sub-menu {
+  left: 100%;
+  top: 0px;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.header-menu .sub-menu li:hover .sub-menu {
+  top: -8px;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  width: 320px;
+  height: 100%;
+  left: -325px;
+  background-color: #fff;
+  z-index: 999;
+  padding-top: 70px;
+  padding-bottom:20px;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  overflow: auto;
+}
+@media(min-width:640px){
+  .mobile-menu{
+    width: 400px;
+    left: -405px;
+    padding-top: 75px;
+  }
+}
+@media(min-width:768px){
+  .mobile-menu{
+    padding-top: 80px;
+  }
+}
+
+.mobile-menu.open {
+  left: 0;
+}
+
+.mobile-menu .menu-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 28px;
+  color: #262626;
+}
+
+.mobile-menu-items ul {
+  border-top: 1px solid rgba(10, 77, 60, 0.15);
+}
+
+.mobile-menu-items ul li {
+  position: relative;
+}
+
+.mobile-menu-items ul li a {
+  display: block;
+  width: 100%;
+  background: none;
+  text-align: left;
+  padding: 10px 20px;
+  border: 0;
+  border-bottom: 1px solid rgba(10, 77, 60, 0.15);
+  font-size: 16px;
+  font-weight: 500;
+  color: #262626;
+}
+.mobile-menu-items ul li:hover a:hover {
+  color: #FDC815;
+}
+
+.mobile-menu-items ul li .mobile-menu-expand {
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.mobile-menu-items ul li .mobile-menu-expand::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #262626;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.mobile-menu-items ul li .mobile-menu-expand::after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 100%;
+  background-color: #262626;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.mobile-menu-items ul li.active-expand > .mobile-menu-expand::after {
+  height: 0;
+}
+
+.mobile-menu-items ul li ul {
+  border-top: 0;
+}
+
+.mobile-menu-items ul li ul li a {
+  padding-left: 30px;
+  font-size: 15px;
+}
+
+.mobile-menu-items ul li ul li ul li a {
+  padding-left: 40;
+}
+
+/* Fullpagejs */
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+  background: #FFFFFF;
+}
+.fp-warning, .fp-watermark{
+  display: none !important;
+}
